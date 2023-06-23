@@ -4,22 +4,30 @@ pipeline {
     stages {
         stage ("Initialization") {
             steps {
-                println(script{simple-calculator.call(num1, num2)})
+                script {
+                    println(simple-calculator.call(num1, num2)
+                }
             }
         }
         stage ("Addition") {
             steps {
-                println(script{simple-calculator.add(num1, num2)})
+                script {
+                    println(simple-calculator.add(num1, num2))
+                }
             }
         }
         stage ("Subtraction") {
             steps {
-                println(script{simple-calculator.subtract(num1, num2)})
+                script {
+                    println(simple-calculator.subtract(num1, num2))
+                }
             }
         }
         stage ("Multiplication") {
             steps {
-                println(script{simple-calculator.multiply(num1, num2)})
+                script {
+                    println(simple-calculator.multiply(num1, num2))
+                }
             }
         }
         stage ("Odd and Even Numbers") {
