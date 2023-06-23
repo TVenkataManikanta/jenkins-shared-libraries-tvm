@@ -24,7 +24,9 @@ pipeline {
         }
         stage ("Odd and Even Numbers") {
             steps {
-                simple-calculator.oddoreven(num1, num2)
+                script {
+                    simple-calculator.oddoreven(num1, num2)
+                }
             }
         }
     }
