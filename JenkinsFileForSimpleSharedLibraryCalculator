@@ -5,7 +5,7 @@ pipeline {
         stage ("Initialization") {
             steps {
                 script {
-                    println(simple-calculator.call(num1, num2)
+                    println(simple-calculator.call(num1, num2))
                 }
             }
         }
