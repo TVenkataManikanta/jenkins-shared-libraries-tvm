@@ -5,35 +5,35 @@ pipeline {
         stage ("Initialization") {
             steps {
                 script {
-                    println(simple-calculator.call(num1, num2))
+                    println(simpleCalculator.call(num1, num2))
                 }
             }
         }
         stage ("Addition") {
             steps {
                 script {
-                    println(simple-calculator.add(num1, num2))
+                    println(simpleCalculator.add(num1, num2))
                 }
             }
         }
         stage ("Subtraction") {
             steps {
                 script {
-                    println(simple-calculator.subtract(num1, num2))
+                    println(simpleCalculator.subtract(num1, num2))
                 }
             }
         }
         stage ("Multiplication") {
             steps {
                 script {
-                    println(simple-calculator.multiply(num1, num2))
+                    println(simpleCalculator.multiply(num1, num2))
                 }
             }
         }
         stage ("Odd and Even Numbers") {
             steps {
                 script {
-                    simple-calculator.oddoreven(num1, num2)
+                    simpleCalculator.oddoreven(num1, num2)
                 }
             }
         }
